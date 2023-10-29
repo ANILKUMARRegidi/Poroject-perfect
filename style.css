@@ -1,0 +1,68 @@
+.navbar {
+    background-color: bisque;
+    padding:0px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    overflow:hidden;
+    margin: 0;
+}
+
+.navbar li {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    width:100vw;
+    text-decoration: none;
+    list-style: none;
+    font-size: initial;
+    padding-right:3.5%;
+    margin:0;
+    overflow-x: hidden;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+ /* Add this property to prevent line breaks */
+    width:100%;
+}
+
+
+/* Larger screens, desktops and laptops */
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Standard screens, laptops, tablets */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Small screens, tablets and large phones */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Extra small screens, phones */
+@media only screen and (max-width: 575px) {
+    .navbar {
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: left;
+        padding-left: 0;
+        overflow-x: auto;
+    }
+}
+.main{
+    overflow:hidden;
+}
