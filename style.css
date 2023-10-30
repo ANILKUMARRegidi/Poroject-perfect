@@ -1,68 +1,86 @@
-.navbar {
-    background-color: bisque;
-    padding:0px;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    overflow:hidden;
-    margin: 0;
-}
-
-.navbar li {
-    display:flex;
-    justify-content:flex-start;
-    flex-direction: row;
-    width:100vw;
-    text-decoration: none;
-    list-style: none;
-    font-size: initial;
-    padding-right:3.5%;
-    margin:0;
-    overflow-x: hidden;
-}
-.navbar ul {
+/* Default styles for the navbar */
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
-    overflow-x: hidden;
- /* Add this property to prevent line breaks */
-    width:100%;
+    justify-content:space-between;
+    width:100vw;
+    background-color: blue;
 }
-
-
-/* Larger screens, desktops and laptops */
-@media only screen and (min-width: 1200px) {
-    .navbar {
-        flex-direction: row;
+.bg-primary{
+    width:100vw;
+}
+.mobile .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+/* Media query for small screens */
+@media (min-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
         align-items: center;
+        
+    }
+
+    .navbar-nav li {
+        padding-right: 0;
+        margin-bottom: 10px; /* Add margin between items on small screens */
     }
 }
-
-/* Standard screens, laptops, tablets */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .navbar {
-        flex-direction: row;
+@media (min-width:768px)
+{
+    .navbar-nav{
+        
+        flex-direction:column;
         align-items: center;
+        width: 100vw;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100vw;
+        
+    }
+    .mobile ul li{
+        justify-content: space-between;
+        padding-right:10px;
     }
 }
-
-/* Small screens, tablets and large phones */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .navbar {
-        flex-direction: row;
+@media (min-width:390px)
+{
+    .navbar-nav{
+        
+        flex-direction:column;
         align-items: center;
+        width: 100vw;
     }
-}
-
-/* Extra small screens, phones */
-@media only screen and (max-width: 575px) {
-    .navbar {
+    .mobile ul{
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        align-items:flex-start;
-        justify-content: left;
-        padding-left: 0;
-        overflow-x: auto;
+        width: 100vw;
+        
+    }
+    .mobile ul li{
+        justify-content: space-between;
+        padding-right:10px;
     }
 }
-.main{
-    overflow:hidden;
+@media (max-width:992px)
+{
+    .navbar-nav{
+        
+        flex-direction:column;
+        align-items: center;
+        width: 100vw;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100vw;
+        
+    }
+    .mobile ul li{
+        justify-content: space-between;
+        padding-right:10px;
+    }
 }
