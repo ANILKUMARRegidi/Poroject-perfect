@@ -20,7 +20,7 @@
     }
 
     .navbar-nav li {
-        padding-right: 0;
+        padding-right: 10px;
         margin-bottom: 10px; /* Add margin between items on small screens */
     }
 }
